@@ -2,6 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background: #fff;
+    overflow-x: hidden;
 }
 img{
     display: block;
@@ -171,6 +172,74 @@ color: #404BBF;
 
 }
 
+.mob-menu{
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.icons-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.menu-icon-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #404BBF;
+    border-radius: 25px;
+}
+.icon-menu{
+    fill: #F4F4FD;
+
+}
+
+
+.btn-menu-cloce{
+  display: block;
+margin: 24px;
+margin-left: 24px;
+    }
+
+
+     .menu-list{
+        display: block;
+        flex-direction: column;
+        gap: 40px 40px;
+        margin-left: 16px;
+        margin-bottom: 168px;
+     }
+
+     .menu-link{
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+     }
+
+.current{
+    color: #404BBF;
+}
+.addres-list-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 16px;
+    margin-bottom: 48px;
+}
+
+
+
+    
+
 
 
 /* @media screen and (min-width: 768px) {
@@ -319,7 +388,7 @@ background-color: #404BBF;
 }
 
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
@@ -418,7 +487,7 @@ background-color: #404BBF;
         font-size: 16px;
         line-height: 1.5;
     }
-}
+} */
 
 
 .advantages{
