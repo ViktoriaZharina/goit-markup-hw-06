@@ -6,6 +6,7 @@ body {
 }
 img{
     display: block;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -302,15 +303,23 @@ gap: 12px;
 .section-one{
     max-width: 1440px;
     background: #2e2f42;
-    padding: 188px 0;
+    padding: 72px 0;
     text-align: center;
     margin: 0 auto;
-    background-image: url('../images/people-office.jpg');
+    background-image: url('../images/hero-mob.jpg');
 background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
+
+@media screen and (min-resolution: 192dpi){
+.section-one{
+background-image: url('../images/hero-mob-2x.jpg');
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-mob-2x.jpg');
+}
+}   
+
 
 .section-one-title{
     font-weight: 700;
@@ -1086,6 +1095,19 @@ margin-right: 8px;
     .address-link:focus {
         color: #404BBF;
     }
+    .section-one{
+        padding: 112px 0;
+    }
+    .section-one{
+    background-image: url('../images/hero-tab.jpg');
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-tab.jpg');
+    }
+        @media screen and (min-resolution: 192dpi) {
+            .section-one {
+                background-image: url('../images/hero-tab-2x.jpg');
+                background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-tab-2x.jpg');
+            }
+        }
 
     .section-one-title {
         font-size: 56px;
@@ -1159,6 +1181,19 @@ margin-right: 8px;
         font-size: 16px;
         line-height: 1.5;
     }
+    .section-one {
+        padding: 188px 0;
+    }
+    .section-one {
+    background-image: url('../images/people-office.jpg');
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+                }
+    @media screen and (min-resolution: 192dpi) {
+        .section-one {
+                background-image: url('../images/hero-desc-2x.jpg');
+                background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-desc-2x.jpg');
+            }
+        }
 
     .advantages-icons {
         display: flex;
