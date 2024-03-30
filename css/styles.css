@@ -116,27 +116,6 @@ color: #404BBF;
     display: none;
 }
 
-/* .address-link {
-    color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    display: flex;
-        gap: 40px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover,
-.address-link:focus {
-    color: #404BBF;
-} */
-
-/* .addres-list{
-    display: flex;
-    gap: 40px;
-} */
-
-
 .open-menu-btn{
     padding: 0;
     background-color: transparent;
@@ -147,6 +126,9 @@ color: #404BBF;
 }
 
 .mob-menu{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     position: fixed;
     top: 0;
     background: #fff;
@@ -181,13 +163,21 @@ color: #404BBF;
 margin: 24px;
 margin-left: 24px;
 margin-left: 272px;
+border-radius: 100%;
+    fill: #e7e9fc;
+    stroke-width: 1px;
+    stroke: #2e2f42;
+    color: #2E2F42;
     }
 
+    .icon-close-modal{
+        color: #2E2F42;
+    }
 
      .menu-list{
-        display: block;
+        display: flex;
         flex-direction: column;
-        gap: 40px 40px;
+        gap: 40px;
         margin-left: 16px;
         margin-bottom: 168px;
      }
@@ -209,96 +199,13 @@ margin-left: 272px;
     gap: 24px;
     margin-left: 16px;
     margin-bottom: 48px;
+    color: #434455;
+}
+.address-link-menu{
+    color: #434455;
 }
 
 
-/* @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-    .open-menu-btn{
-        display: none;
-    }
-    .logo{
-        margin-right: 120px;
-    }
-          .header-list {
-              display: flex;
-              gap: 40px;
-          }
-        .nav-link {
-            display: block;
-            color: #2E2F42;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            padding: 24px 0;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .nav-link:hover,
-        .nav-link:focus {
-            color: #404BBF;
-        }
-    
-        .current {
-            position: relative;
-            color: #404BBF;
-        }
-    
-        .current::after {
-            content: "";
-            position: absolute;
-            background-color: #404bbf;
-            border-radius: 2px;
-            height: 4px;
-            width: 100%;
-            left: 0;
-            bottom: -1px;
-        }
-         .address {
-                      display: block;
-                  }
-                  .addres-list{
-display: flex;
-flex-direction: column;
-gap: 12px;
-                  }
-
-                .address-link {
-                    color: #434455;
-                    font-size: 12px;
-                    line-height: 1.16;
-                    letter-spacing: 0.02em;
-                    display: flex;
-                    gap: 40px;
-                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                }
-        
-                .address-link:hover,
-                .address-link:focus {
-                    color: #404BBF;
-                }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding: 0 15px;
-    }
-    .logo{
-        margin-right: 76px;
-    }
-    .addres-list{
-        flex-direction: row;
-        gap: 40px;
-    }
-    .address-link{
-        font-size: 16px;
-        line-height: 1.5;
-    }
-} */
 
 .section-one{
     max-width: 1440px;
@@ -307,7 +214,7 @@ gap: 12px;
     text-align: center;
     margin: 0 auto;
     background-image: url('../images/hero-mob.jpg');
-background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -332,6 +239,7 @@ background-image: url('../images/hero-mob-2x.jpg');
         max-width: 496px;
         padding-bottom: 48px;
         margin: 0 auto;
+        padding: 72px 52px;
 }
 
 
@@ -365,11 +273,8 @@ background-color: #404BBF;
     background-color: #404BBF;
 }
 
-
-
 .advantages{
-    /* padding: 120px 0; */
-
+padding: 96px 0;
 }
 
 .visually-hidden{
@@ -390,9 +295,6 @@ position: absolute;
 display: flex;
 flex-wrap: wrap;
     gap: 72px;
-    margin-top: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
     
 }
 
